@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>T124O-Compra</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+ 
+</head>
+
+    <body class="body-form body-form-1">
+
+
+        <!-- form de compra -->
+        <main>
+
+          <div class="container container-form">
+            <div class="brand-title">FORMULARIO DE COMPRA</div>
+                    <div ><img src="assets/img/logo.png" class="brand-logo"></div>
+                    <p class="p-form">Completa todos los espacios<br>con tus datos<br> luego oprimes en revisar y luego en comprar</p>
+
+            <form id="formulario" novalidate>
+                
+                <input
+                    class="form-control mb-2 input-form userName"
+                    type="text"
+                    name="userName"
+                    placeholder="Nombre:"
+                    id="userName"
+                    minlength="3"
+                    maxlength="12"
+                    
+                    
+                >
+                <p class="text-danger mb-2 d-none" id="alertName"></p>
+                <label>Seleciona el numero de tu producto⬇️</label>
+                <select class="form-select input-form form-control mb-2 input-form userProducto " id="userProducto" aria-label="Floating label select example">
+                  <option selected>Selecionar</option>
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+
+                </select>
+                <p class="text-danger mb-2 d-none" id="alertProducto"></p>
+                
+                <select class="form-select input-form form-control mb-2 input-form userCity" id="userCity" aria-label="Floating label select example">
+                  <option selected>¿Ciudad? ¡oprimir!</option>
+                  <option value="Bogotá">Bogotá</option>
+                  <option value="Madrid cundinamarca">Madrid cundinamarca</option>
+                  <option value="Soacha cundinamarca">Soacha cundinamarca</option>
+                  <option value="Funza cundinamarca">Funza cundinamarca</option>
+                </select>
+                <p class="text-danger mb-2 d-none" id="alertCity"></p>
+                <select class="form-select input-form form-control mb-2 input-form userLocalidad" id="userLocalidad" aria-label="Floating label select example">
+                  <option selected>¿localidad? ¡oprimir!</option>
+                  <option value="Madird cundinamarca">MADRID CUNDINAMARCA</option>
+                  <option value="Funza cundinamarca">FUNZA CUNDINAMARCA</option>
+                  <option value="Soacha cundinamarca">SOACHA CUNDINAMARCA</option>
+                  <option value="Usaquén">Usaquén</option>
+                  <option value="Chapinero">Chapinero</option>
+                  <option value="Santa Fe">Santa Fe</option>
+                  <option value="San Cristóbal">San Cristóbal</option>
+                  <option value="Usme">Usme</option>
+                  <option value="Tunjuelito">Tunjuelito</option>
+                  <option value="Bosa">Bosa</option>
+                  <option value="Kennedy">Kennedy</option>
+                  <option value="Fontibón">Fontibón</option>
+                  <option value="Engativá">Engativá</option>
+                  <option value="Suba">Suba</option>
+                  <option value="Barrios Unidos">Barrios Unidos</option>
+                  <option value="Teusaquillo">Teusaquillo</option>
+                  <option value="Los Mártires">Los Mártires</option>
+                  <option value="Antonio Nariño">Antonio Nariño</option>
+                  <option value="Puente Aranda">Puente Aranda</option>
+                  <option value="La Candelaria">La Candelaria</option>
+                  <option value="Rafael Uribe Uribe">Rafael Uribe Uribe</option>
+                  <option value="Ciudad Bolívar">Ciudad Bolívar</option>
+                  <option value="Sumapaz">Sumapaz</option>
+                </select>
+                <p class="text-danger mb-2 d-none" id="alertLocalidad"></p>
+                <label>Añadir mas productos a tu ragalo⬇️</label>
+                      <select class="form-select input-form form-control mb-2 input-form userExtra" id="userExtra" aria-label="Floating label select example">
+                        <option selected>Agregar 🛍️</option>
+                        <option value="Nada gracias">🥺NADA🥺</option>
+                        <option value="➕">🛒pan</option>
+                        <option value="➕">🛒pan</option>
+                        <option value="➕">🛒pan</option>
+                        <option value="➕">🛒pan</option>
+                      </select>
+                      <p class="text-danger mb-2 d-none" id="alertExtra"></p>
+                      <label>Que fecha lo quieres recibir ?</label>
+                      <input name="sugerencias"  id="userFecha" class="input-form form-control mb-4 input-form userFecha" type="date">
+                      <p class="text-danger mb-2 d-none" id="alertFecha"></p>
+
+                
+                
+                <button type="submit" class="btn btn-dark">Revisar datos⬇️⬇️</button>
+                    
+                 
+
+            </form>
+            <div class="alert alert-success p-1 text-center m-2 d-none " id="alert"><button id="submit" class="btn button-form botonComprar" type="submit">Comprar</button></div>
+        
+        </div>
+
+
+        <a href="regalos.html" class="btn-flotante"><i class="bi bi-reply"></i> productos</a>
+        
+           
+
+
+            
+
+
+
+
+            <!-- Vendor JS Files -->
+            <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+            <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+            <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+            <script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+
+            
+            <!-- Template Main JS File -->
+            <script src="assets/js/form.js"></script>
+            <script src="assets/js/main.js"></script>
+
+
+    </body>
+
+</html>
